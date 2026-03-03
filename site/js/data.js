@@ -31,17 +31,18 @@ const COMPETITORS = [
     url: "https://dogphoria.net/",
     reviewUrl: "https://www.yelp.com/biz/dogphoria-chamblee",
     distanceMi: 1.0,
+    driveTime: { offPeak: "4–6 min", amRush: "6–8 min", pmRush: "8–12 min", note: "Same neighborhood — Peachtree Blvd corridor" },
     pricing: {
       daycare: "$35/day",
-      boarding: "Not listed publicly",
-      notes: "$25 late pickup (after 12pm), $38 re-eval fee"
+      boarding: "$65/night (standard 5×5 suite) · $75/night (luxury 5×8 suite)",
+      notes: "Multi-dog discounts: 2 dogs $115/night, 3 dogs $180/night. All boarding includes daycare. $25 late pickup (after 12pm), $38 re-eval fee."
     },
     services: ["Daycare", "Boarding", "Webcams", "Playgroups"],
     hours: "M–F 7:30am–7pm | Sat 10am–3:30pm | Sun 4–6pm",
     rating: 4.7,
     reviews: 20,
     reviewSource: "Yelp",
-    notes: "Closest competitor. Limited Sunday hours = gap opportunity.",
+    notes: "Closest facility competitor — same Peachtree corridor, 1 mile. Limited Sunday hours (4–6pm only) = clear gap. Boarding pricing confirmed: $65–75/night.",
     color: "#e74c3c"
   },
   {
@@ -54,6 +55,7 @@ const COMPETITORS = [
     address: "4280 N Peachtree Rd, Chamblee GA 30341",
     url: "https://vcahospitals.com/pets-are-people-too-chamblee/services/pet-boarding/dog-boarding",
     distanceMi: 0.5,
+    driveTime: { offPeak: "2–3 min", amRush: "3–4 min", pmRush: "4–5 min", note: "Same street — negligible traffic impact" },
     pricing: {
       daycare: "N/A",
       boarding: "Not listed",
@@ -63,7 +65,7 @@ const COMPETITORS = [
     hours: "Standard vet hours",
     rating: null,
     reviews: null,
-    notes: "On same road. Medical boarding niche — not direct daycare competition. Potential referral partner.",
+    notes: "On same road, 0.5 mi. Medical boarding niche — not direct daycare competition. Potential referral partner.",
     color: "#3498db"
   },
   {
@@ -77,6 +79,7 @@ const COMPETITORS = [
     url: "https://www.dogtopia.com/atlanta-northbrookhaven/",
     pricingUrl: "https://www.dogtopia.com/atlanta-northbrookhaven/pricing/",
     distanceMi: 4.2,
+    driveTime: { offPeak: "15–18 min", amRush: "25–35 min", pmRush: "30–45 min", note: "Via Peachtree Rd + Ashford Dunwoody — heavy rush hour corridor" },
     pricing: {
       daycare: "$42/day (1x/wk) → $99/mo unlimited",
       boarding: "$40–$85/night (enrolled pricing)",
@@ -86,7 +89,7 @@ const COMPETITORS = [
     hours: "Standard daycare hours",
     rating: null,
     reviews: null,
-    notes: "National franchise (Dogtopia). Membership/enrollment model creates recurring revenue and priority booking. Boarding dogs in open-play (no kennel runs).",
+    notes: "National franchise (Dogtopia). Membership/enrollment model creates recurring revenue. Boarding dogs in open-play (no kennel runs). PM rush drive = 30–45 min from our property.",
     color: "#9b59b6"
   },
   {
@@ -100,6 +103,7 @@ const COMPETITORS = [
     url: "https://www.barkandboard.com/",
     pricingUrl: "https://www.barkandboard.com/rates",
     distanceMi: 4.5,
+    driveTime: { offPeak: "14–18 min", amRush: "25–35 min", pmRush: "30–45 min", note: "South on Peachtree Rd through Brookhaven — gridlock at 5–7pm" },
     pricing: {
       daycare: "$99/mo unlimited (intro offer)",
       boarding: "Large kennels (not crates); 28-hr rate",
@@ -111,8 +115,33 @@ const COMPETITORS = [
     reviews: 360,
     reviewSource: "Birdeye",
     reviewUrl: "https://birdeye.com/bark-and-board-brookhaven-153936656938623",
-    notes: "Locally owned, 2 Atlanta locations. Known for large kennels, not crates.",
+    notes: "Locally owned, 2 Atlanta locations. Known for large kennels, not crates. PM rush drive = 30–45 min.",
     color: "#e67e22"
+  },
+  {
+    id: "puppy-haven-brookhaven",
+    name: "Puppy Haven Brookhaven",
+    type: "daycare-boarding",
+    tier: "local-premium",
+    lat: 33.8600,
+    lng: -84.3420,
+    address: "2740 Caldwell Rd NE, Brookhaven GA 30319",
+    url: "https://www.puppyhaven.com/locations/brookhaven/",
+    distanceMi: 3.8,
+    driveTime: { offPeak: "12–16 min", amRush: "22–30 min", pmRush: "28–40 min", note: "South on Peachtree then west — moderate surface-street congestion" },
+    pricing: {
+      daycare: "Call for rates (evaluation $29.95, 1st night free after eval)",
+      boarding: "Not publicly listed",
+      notes: "Reward points program; $5 holiday surcharge. First daycare/boarding day FREE."
+    },
+    services: ["Daycare", "Boarding", "Grooming", "Training"],
+    hours: "M–Th 7am–7:30pm | F 7am–7pm | Sat 8am–4pm | Sun 12pm–7pm",
+    rating: null,
+    reviews: 125,
+    reviewSource: "Yelp",
+    reviewUrl: "https://www.yelp.com/biz/puppy-haven-brookhaven-brookhaven",
+    notes: "Previously missed competitor. Multi-location (also Buckhead). Indoor/outdoor play yards, grooming, training. 125+ Yelp reviews. PM rush drive = 28–40 min.",
+    color: "#1abc9c"
   },
   {
     id: "bhv-sandy-springs",
@@ -124,6 +153,7 @@ const COMPETITORS = [
     address: "Sandy Springs, GA",
     url: "https://www.barkinghoundvillage.com/",
     distanceMi: 6.5,
+    driveTime: { offPeak: "20–25 min", amRush: "35–50 min", pmRush: "45–60 min", note: "Via I-285 W or Peachtree Rd — worst during PM rush" },
     pricing: {
       daycare: "Not listed",
       boarding: "Standard / Junior / Suite / Presidential tiers",
@@ -133,7 +163,7 @@ const COMPETITORS = [
     hours: "Extended hours",
     rating: null,
     reviews: null,
-    notes: "Part of BHV — 7 Atlanta locations. NO location in Chamblee/north DeKalb. Gap in market.",
+    notes: "Part of BHV — 7 Atlanta locations. NO location in Chamblee/north DeKalb. PM rush drive = 45–60 min from our property.",
     color: "#27ae60"
   },
   {
@@ -146,6 +176,7 @@ const COMPETITORS = [
     address: "Pharr Rd NW, Atlanta GA (Buckhead)",
     url: "https://www.barkinghoundvillage.com/pharr-road-buckhead/",
     distanceMi: 7.0,
+    driveTime: { offPeak: "22–30 min", amRush: "40–55 min", pmRush: "50–70 min", note: "Peachtree Rd Buckhead corridor notorious for PM gridlock" },
     pricing: {
       daycare: "Not listed",
       boarding: "Tiered suite model",
@@ -155,7 +186,7 @@ const COMPETITORS = [
     hours: "Extended hours",
     rating: null,
     reviews: null,
-    notes: "BHV's premium Buckhead location. Indoor climate-controlled play yard.",
+    notes: "BHV's premium Buckhead location. Indoor climate-controlled play yard. PM rush = 50–70 min from Chamblee.",
     color: "#27ae60"
   },
   {
@@ -168,13 +199,60 @@ const COMPETITORS = [
     address: "Cheshire Bridge Rd NE, Atlanta GA",
     url: "https://www.barkinghoundvillage.com/",
     distanceMi: 9.0,
+    driveTime: { offPeak: "28–38 min", amRush: "50–65 min", pmRush: "60–80 min", note: "Longest drive — Cheshire Bridge congested day and night" },
     pricing: { daycare: "Not listed", boarding: "Tiered suite model", notes: "" },
     services: ["Daycare", "Boarding", "Grooming", "Training"],
     hours: "Extended hours",
     rating: null,
     reviews: null,
-    notes: "BHV chain location.",
+    notes: "BHV chain location. Effectively 60–80 min round trip during PM rush for Chamblee residents.",
     color: "#27ae60"
+  },
+  {
+    id: "camp-run-a-mutt",
+    name: "Camp Run-A-Mutt Dunwoody",
+    type: "daycare-boarding",
+    tier: "franchise",
+    lat: 33.9272,
+    lng: -84.3080,
+    address: "5486 Chamblee Dunwoody Rd, Suite 16C, Dunwoody GA 30338",
+    url: "https://www.camprunamutt.com/dunwoody/",
+    distanceMi: 4.5,
+    driveTime: { offPeak: "12–16 min", amRush: "20–28 min", pmRush: "25–35 min", note: "Via Chamblee Tucker Rd + Chamblee Dunwoody Rd — moderate congestion" },
+    pricing: {
+      daycare: "$43/day · $38.80 (5-day pkg) · ~$19.67/day unlimited",
+      boarding: "$65/night standard · $75/night holiday",
+      notes: "No Sunday daycare (boarding pickup 10am–3pm only)."
+    },
+    services: ["Daycare", "Boarding", "Grooming", "Training", "Cage-Free"],
+    hours: "M–F 7am–7pm | Sat 8am–4pm | Sun CLOSED (boarding pickup only)",
+    rating: null,
+    reviews: null,
+    notes: "National franchise. 100% cage-free, Muttcam livestream. Pricing confirmed. No Sunday daycare = gap for our facility.",
+    color: "#8e44ad"
+  },
+  {
+    id: "atlanta-pet-resort-dunwoody",
+    name: "Atlanta Pet Resort — Dunwoody",
+    type: "daycare-boarding",
+    tier: "local-premium",
+    lat: 33.9310,
+    lng: -84.3120,
+    address: "4343 Dunwoody Park, Suite G, Dunwoody GA 30338",
+    url: "https://www.atlpetdunwoody.com/",
+    distanceMi: 5.0,
+    driveTime: { offPeak: "14–18 min", amRush: "22–30 min", pmRush: "28–38 min", note: "Via Chamblee Tucker Rd — same corridor as Camp Run-A-Mutt" },
+    pricing: {
+      daycare: "$32/day full · $20/half-day",
+      boarding: "From $51/night",
+      notes: "Puppy socialization classes. Sat hours 10am–2pm only."
+    },
+    services: ["Daycare", "Boarding", "Grooming", "Training", "Pet Sitting"],
+    hours: "M–F 7am–7pm | Sat 10am–2pm | Sun 12pm–6pm",
+    rating: null,
+    reviews: null,
+    notes: "Value pricing ($32/day daycare). Limited Saturday hours (10am–2pm). Pricing confirmed.",
+    color: "#2980b9"
   },
   {
     id: "central-bark",
@@ -186,6 +264,7 @@ const COMPETITORS = [
     address: "Atlanta / Brookhaven / Druid Hills",
     url: "https://www.centralbarkusa.com/atlanta/",
     distanceMi: 8.0,
+    driveTime: { offPeak: "25–32 min", amRush: "45–60 min", pmRush: "50–65 min", note: "South on Peachtree through multiple congested zones" },
     pricing: {
       daycare: "Not publicly listed",
       boarding: "Not publicly listed",
@@ -195,7 +274,7 @@ const COMPETITORS = [
     hours: "Standard daycare hours",
     rating: null,
     reviews: null,
-    notes: "Positioning around 'enrichment daycare' — structured activities vs. free play.",
+    notes: "Positioning around 'enrichment daycare' — structured activities vs. free play. Rush drive = 50–65 min.",
     color: "#f39c12"
   }
 ];
@@ -298,6 +377,26 @@ const SOURCES = {
     label: "DogPhoria — Yelp Reviews",
     url: "https://www.yelp.com/biz/dogphoria-chamblee",
     notes: "4.7 stars, 20 reviews, address, hours"
+  },
+  camp_run_mutt: {
+    label: "Camp Run-A-Mutt Dunwoody — Pricing & Info",
+    url: "https://www.camprunamutt.com/dunwoody/",
+    notes: "Daycare $43/day single, $65/night boarding, cage-free, Muttcam, grooming"
+  },
+  atlanta_pet_resort: {
+    label: "Atlanta Pet Resort — Dunwoody",
+    url: "https://www.atlpetdunwoody.com/",
+    notes: "Daycare $32/day, boarding from $51/night"
+  },
+  puppy_haven_brookhaven: {
+    label: "Puppy Haven — Brookhaven (Yelp)",
+    url: "https://www.yelp.com/biz/puppy-haven-brookhaven-brookhaven",
+    notes: "125+ reviews, 2740 Caldwell Rd NE, Brookhaven GA 30319"
+  },
+  dekalb_animal: {
+    label: "DeKalb County Animal Services",
+    url: "https://www.dekalbcountyga.gov/animal-services/home",
+    notes: "County animal control, shelter, ordinance enforcement"
   },
   dogtopia_pricing: {
     label: "Dogtopia North Brookhaven — Pricing",

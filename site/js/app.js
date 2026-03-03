@@ -54,6 +54,17 @@ function buildCompetitorCards() {
     const websiteLink = c.url ? `<a href="${c.url}" target="_blank" rel="noopener" class="visit-link">Visit website ↗</a>` : '';
     const pricingLink = c.pricingUrl ? ` &nbsp;<a href="${c.pricingUrl}" target="_blank" rel="noopener" class="src-link">pricing page ↗</a>` : '';
 
+    const driveHtml = c.driveTime ? `
+      <div style="background:#f0f7f0; border:1px solid #c8e6c9; border-radius:6px; padding:7px 10px; margin-bottom:8px; font-size:0.75rem;">
+        <span style="font-weight:700; color:var(--primary);">🚗 Drive from 4829 Peachtree</span>
+        <div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span style="background:white; border:1px solid #c8e6c9; border-radius:4px; padding:2px 6px;">🟢 Off-peak: <b>${c.driveTime.offPeak}</b></span>
+          <span style="background:white; border:1px solid #c8e6c9; border-radius:4px; padding:2px 6px;">🟡 AM rush: <b>${c.driveTime.amRush}</b></span>
+          <span style="background:white; border:1px solid #c8e6c9; border-radius:4px; padding:2px 6px;">🔴 PM rush: <b>${c.driveTime.pmRush}</b></span>
+        </div>
+        ${c.driveTime.note ? `<div style="color:var(--text-muted); margin-top:3px; font-style:italic;">${c.driveTime.note}</div>` : ''}
+      </div>` : '';
+
     grid.innerHTML += `
       <div class="competitor-card" style="border-left-color: ${c.color};">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
@@ -63,6 +74,7 @@ function buildCompetitorCards() {
         <div class="address">${c.address}</div>
         <span class="distance-badge ${getDistanceClass(c.distanceMi)}">~${c.distanceMi} mi away</span>
         ${ratingHtml ? `<div style="margin-bottom:8px;">${ratingHtml}</div>` : ''}
+        ${driveHtml}
         <div class="pricing-row">
           <span class="price-tag">Daycare: ${c.pricing.daycare}</span>
           <span class="price-tag">Boarding: ${c.pricing.boarding}</span>
@@ -239,9 +251,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Build sources panels for each tab
   buildSourcesPanel(['property', 'dekalb_tax', 'dekalb_tax_calc', 'chamblee_tax', 'chamblee_zoning'], 'sources-property');
   buildSourcesPanel(['market_gminsights', 'market_grandview', 'appa_stats', 'chamblee_demographics', 'chamblee_zip', 'chamblee_datausa', 'rover_pricing', 'pet_industry_ga'], 'sources-market');
-  buildSourcesPanel(['dogtopia_pricing', 'bark_board_rates', 'bhv_main', 'dogphoria_yelp', 'rover_pricing'], 'sources-competitors');
+  buildSourcesPanel(['dogtopia_pricing', 'bark_board_rates', 'bhv_main', 'dogphoria_yelp', 'rover_pricing', 'camp_run_mutt', 'atlanta_pet_resort', 'puppy_haven_brookhaven'], 'sources-competitors');
   buildSourcesPanel(['startup_costs', 'property', 'dekalb_tax'], 'sources-financials');
   buildSourcesPanel(['staff_ratios', 'startup_costs'], 'sources-operations');
-  buildSourcesPanel(['gda_kennel_license', 'gda_kennel_info', 'ga_statute', 'chamblee_zoning', 'chamblee_planning'], 'sources-regulations');
+  buildSourcesPanel(['gda_kennel_license', 'gda_kennel_info', 'ga_statute', 'chamblee_zoning', 'chamblee_planning', 'dekalb_animal'], 'sources-regulations');
   buildSourcesPanel(['property', 'market_gminsights', 'appa_stats', 'chamblee_demographics', 'rover_pricing', 'dogtopia_pricing', 'bhv_main', 'dogphoria_yelp'], 'sources-overview');
 });
