@@ -1,3 +1,0 @@
-[     149ms] [ERROR] Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector @ https://unpkg.com/leaflet@1.9.4/dist/leaflet.css:0
-[     150ms] [ERROR] Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector @ https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap:0
-[     203ms] [ERROR] Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector @ https://unpkg.com/leaflet@1.9.4/dist/leaflet.js:0
