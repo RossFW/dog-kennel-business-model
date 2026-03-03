@@ -5,19 +5,30 @@
 **Owner:** Family-owned (father) — no mortgage, no rent. ~$40K/yr property taxes.
 **Goal:** Evaluate viability of converting to a dog kennel / daycare facility
 
-## Docs Map
+## Data Layer (raw facts → open in Excel)
+
+- [data/competitors.csv](data/competitors.csv) — All 11 competitors, all known fields, empty cells = pricing gaps
+- [data/demand-catchment.csv](data/demand-catchment.csv) — Apartment complexes, zip demographics, dog HH estimates
+- [data/README.md](data/README.md) — How the data layer relates to docs/ and site/
+
+## Analysis Layer (docs/)
 
 - [docs/property.md](docs/property.md) — Physical specs, zoning, property taxes, ownership advantage
-- [docs/competitive-analysis.md](docs/competitive-analysis.md) — Geospatial competitor map, pricing, service matrix
+- [docs/competitive-analysis.md](docs/competitive-analysis.md) — Geospatial competitor map, pricing, service matrix (references data/competitors.csv)
+- [docs/demand-spatial.md](docs/demand-spatial.md) — Apartment density, dog HH estimates, traffic as demand proxy, research gaps
 - [docs/market.md](docs/market.md) — Market sizing, CAGR explained, demographics, demand drivers
 - [docs/financials.md](docs/financials.md) — Startup costs, revenue model, unit economics, projections
 - [docs/regulations.md](docs/regulations.md) — State/county/city licensing, GDA requirements, zoning, timeline
 - [docs/operations.md](docs/operations.md) — Daycare vs. boarding, daily schedule, staffing, facility layout, KPIs
 
-## Website
+## Website (visual layer)
 
-- [site/index.html](site/index.html) — GitHub Pages site with interactive Leaflet competitor map
+- [site/index.html](site/index.html) — GitHub Pages site with interactive Leaflet competitor map + drive times
+- Live: https://rossfw.github.io/dog-kennel-business-model/
 - See [site/README.md](site/README.md) for GitHub Pages deployment instructions
+
+## Key Demand Signal (NEW)
+**971 pet-friendly apartment units on same road within 0.5 miles** (Windsor Parkview 303 + The Oliver 283 + Manor Chamblee 385, all built 2017–2024). Estimated ~388 dog-owning HH. Apartment dogs use daycare at higher rates (no yard). This cluster alone could generate ~47 dogs/day without broader marketing.
 
 ## Key Numbers (as of March 2026)
 - Property taxes: **~$40K/year** (family owns — sunk cost regardless)
