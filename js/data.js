@@ -43,7 +43,7 @@ const COMPETITORS = [
     reviews: 20,
     reviewSource: "Yelp",
     notes: "Closest facility competitor — same Peachtree corridor, 1 mile. Limited Sunday hours (4–6pm only) = clear gap. Boarding pricing confirmed: $65–75/night.",
-    color: "#e74c3c"
+    color: "#c0392b"
   },
   {
     id: "vca",
@@ -66,7 +66,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "On same road, 0.5 mi. Medical boarding niche — not direct daycare competition. Potential referral partner.",
-    color: "#3498db"
+    color: "#2980b9"
   },
   {
     id: "dogtopia-brookhaven",
@@ -90,7 +90,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "National franchise (Dogtopia). Membership/enrollment model creates recurring revenue. Boarding dogs in open-play (no kennel runs). PM rush drive = 30–45 min from our property.",
-    color: "#9b59b6"
+    color: "#c0392b"
   },
   {
     id: "bark-board-brookhaven",
@@ -105,18 +105,18 @@ const COMPETITORS = [
     distanceMi: 4.5,
     driveTime: { offPeak: "14–18 min", amRush: "25–35 min", pmRush: "30–45 min", note: "South on Peachtree Rd through Brookhaven — gridlock at 5–7pm" },
     pricing: {
-      daycare: "$99/mo unlimited (intro offer)",
-      boarding: "Large kennels (not crates); 28-hr rate",
-      notes: "First day free. 360+ reviews."
+      daycare: "$37/day full · $25/half-day · 10-pack $32.50/day · 20-pack $30.50/day",
+      boarding: "$50/night standard · $60/night luxury (webcam) · $70/night presidential",
+      notes: "$99 unlimited first 30 days (intro). Add-ons: Special Treat $5, Enrichment $10–20, Private Care +$15/day. Climate-controlled private rooms; Luxury & Presidential include webcam."
     },
-    services: ["Daycare", "Boarding", "Grooming", "Specialty Food"],
+    services: ["Daycare", "Boarding", "Grooming", "Retail"],
     hours: "Standard daycare hours",
     rating: null,
     reviews: 360,
     reviewSource: "Birdeye",
     reviewUrl: "https://birdeye.com/bark-and-board-brookhaven-153936656938623",
-    notes: "Locally owned, 2 Atlanta locations. Known for large kennels, not crates. PM rush drive = 30–45 min.",
-    color: "#e67e22"
+    notes: "Full pricing confirmed from website (March 2026). 2 Atlanta locations. Walk-up $37/day, volume down to $30.50. Boarding $50–70 with upsell add-ons. PM rush = 30–45 min.",
+    color: "#c0392b"
   },
   {
     id: "puppy-haven-brookhaven",
@@ -130,9 +130,9 @@ const COMPETITORS = [
     distanceMi: 3.8,
     driveTime: { offPeak: "12–16 min", amRush: "22–30 min", pmRush: "28–40 min", note: "South on Peachtree then west — moderate surface-street congestion" },
     pricing: {
-      daycare: "Call for rates (evaluation $29.95, 1st night free after eval)",
-      boarding: "Not publicly listed",
-      notes: "Reward points program; $5 holiday surcharge. First daycare/boarding day FREE."
+      daycare: "$44.95/day (group) · $49.95/day (private 1-on-1)",
+      boarding: "$49.95/night base · add Bronze $24.95 (7am–1pm play) · Silver $29.95 (all-day play) · Gold $39.95 (all-day + treat) — max $89.90/night all-in",
+      notes: "Tiered upsell model: overnight base + optional day package. Evaluation: $29.95 (first boarding night free). Rewards points program."
     },
     services: ["Daycare", "Boarding", "Grooming", "Training"],
     hours: "M–Th 7am–7:30pm | F 7am–7pm | Sat 8am–4pm | Sun 12pm–7pm",
@@ -140,8 +140,8 @@ const COMPETITORS = [
     reviews: 125,
     reviewSource: "Yelp",
     reviewUrl: "https://www.yelp.com/biz/puppy-haven-brookhaven-brookhaven",
-    notes: "Previously missed competitor. Multi-location (also Buckhead). Indoor/outdoor play yards, grooming, training. 125+ Yelp reviews. PM rush drive = 28–40 min.",
-    color: "#1abc9c"
+    notes: "Pricing confirmed via phone call (March 2026). Group daycare $44.95/day = above-market rate. Smart upsell: sell the overnight cheap ($49.95), then upsell day activities. Multi-location (Buckhead + Chastain). 125+ Yelp reviews.",
+    color: "#c0392b"
   },
   {
     id: "bhv-sandy-springs",
@@ -164,7 +164,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Part of BHV — 7 Atlanta locations. NO location in Chamblee/north DeKalb. PM rush drive = 45–60 min from our property.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "bhv-buckhead",
@@ -187,7 +187,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "BHV's premium Buckhead location. Indoor climate-controlled play yard. PM rush = 50–70 min from Chamblee.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "bhv-cheshire",
@@ -206,7 +206,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "BHV chain location. Effectively 60–80 min round trip during PM rush for Chamblee residents.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "camp-run-a-mutt",
@@ -229,7 +229,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "National franchise. 100% cage-free, Muttcam livestream. Pricing confirmed. No Sunday daycare = gap for our facility.",
-    color: "#8e44ad"
+    color: "#c0392b"
   },
   {
     id: "atlanta-pet-resort-dunwoody",
@@ -252,7 +252,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Value pricing ($32/day daycare). Limited Saturday hours (10am–2pm). Pricing confirmed.",
-    color: "#2980b9"
+    color: "#c0392b"
   },
   {
     id: "central-bark",
@@ -275,7 +275,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Positioning around 'enrichment daycare' — structured activities vs. free play. Rush drive = 50–65 min.",
-    color: "#f39c12"
+    color: "#c0392b"
   },
   {
     id: "shaggy-and-scrub",
@@ -313,16 +313,16 @@ const COMPETITORS = [
     distanceMi: 6.5,
     driveTime: { offPeak: "20–25 min", amRush: "28–38 min", pmRush: "32–42 min", note: "East via I-285 or surface streets — serves Tucker/Stone Mountain catchment" },
     pricing: {
-      daycare: "Not listed",
+      daycare: "$26/day full · $20/half-day (6 hrs) · +$20 sibling · $10/dog weekends 9am–5pm",
       boarding: "$45/night (1st dog) · $35/night (sibling sharing kennel)",
-      notes: "Discounts for 8–14 night stays ($3 off/night) and 15+ nights ($5 off/night). Baths from $20. $15 late fee after 6pm."
+      notes: "Boarding includes full day daycare if dogs meet group play requirements. Volume daycare discounts available (call). Long-stay boarding: $3 off/night (8–14 nights), $5 off/night (15+). Baths from $20. $15 late fee after 6pm. Rates effective March 2025."
     },
     services: ["Daycare", "Boarding"],
     hours: "M–F 7am–7pm | Sat 9am–6pm | Sun 9am–6pm",
     rating: null,
     reviews: null,
-    notes: "Multi-location chain (Tucker + Norcross + Toco Hills). One of the few competitors with FULL Sunday hours (9am–6pm). East-side catchment (Tucker). 6.5 mi east of property.",
-    color: "#16a085"
+    notes: "Full pricing confirmed from website (March 2026). CHEAPEST daycare in market at $26/day — $6 less than Atlanta Pet Resort ($32). Multi-location (Tucker + Norcross + Toco Hills). Full Sunday hours (9am–6pm). 6.5 mi east.",
+    color: "#c0392b"
   }
 ];
 

@@ -101,16 +101,24 @@ function initMap() {
     maxZoom: 18
   }).addTo(map);
 
-  // 2-mile and 5-mile radius rings
-  [2, 5].forEach((mi, i) => {
+  // 2-mile and 5-mile radius rings with permanent labels
+  [
+    { mi: 2, color: '#777', fill: 'rgba(0,0,0,0.02)', label: '2 mi' },
+    { mi: 5, color: '#aaa', fill: 'rgba(0,0,0,0.01)', label: '5 mi' }
+  ].forEach(ring => {
     L.circle([OUR_PROPERTY.lat, OUR_PROPERTY.lng], {
-      radius: mi * 1609.34,
-      color: i === 0 ? '#e74c3c' : '#2c5f2e',
-      fillColor: i === 0 ? 'rgba(231,76,60,0.05)' : 'rgba(44,95,46,0.04)',
+      radius: ring.mi * 1609.34,
+      color: ring.color,
+      fillColor: ring.fill,
       fillOpacity: 1,
-      weight: 1.5,
-      dashArray: '5,4'
-    }).addTo(map).bindTooltip(`${mi}-mile radius`, { permanent: false });
+      weight: 2,
+      dashArray: '8,6'
+    }).addTo(map).bindTooltip(ring.label, {
+      permanent: true,
+      direction: 'right',
+      className: 'ring-label',
+      offset: [0, 0]
+    });
   });
 
   // Our property marker
@@ -183,7 +191,8 @@ function initMap() {
             <b>Daycare:</b> ${c.pricing.daycare}<br>
             <b>Boarding:</b> ${c.pricing.boarding}<br>
             ${ratingStr}
-            <b>Services:</b> ${c.services.join(', ')}<br>
+            <b>Services:</b><br>
+            <div style="margin:3px 0 4px;">${c.services.map(s => `<span style="display:inline-block;background:#f4f4f4;border:1px solid #ddd;border-radius:10px;padding:1px 8px;font-size:0.68rem;margin:2px 2px 0 0;font-weight:600;">${s}</span>`).join('')}</div>
             ${c.hours ? `<b>Hours:</b> ${c.hours}<br>` : ''}
           </div>
           <div style="font-size:0.75rem; color:#666; margin-top:6px; font-style:italic;">${c.notes}</div>
