@@ -101,19 +101,34 @@ function initMap() {
     maxZoom: 18
   }).addTo(map);
 
-  // 2-mile and 5-mile radius rings — neutral grays to avoid conflicting with marker colors
+  // 2-mile and 5-mile radius rings with permanent labels
   [
-    { mi: 2, color: '#555', fill: 'rgba(0,0,0,0.02)', label: '2-mile radius (~5 min off-peak · 10 min rush)' },
-    { mi: 5, color: '#999', fill: 'rgba(0,0,0,0.015)', label: '5-mile radius (~15 min off-peak · 30–45 min PM rush)' }
+    { mi: 2, color: '#777', fill: 'rgba(0,0,0,0.02)', short: '2 mi', detail: '~5 min off-peak · 10 min rush' },
+    { mi: 5, color: '#aaa', fill: 'rgba(0,0,0,0.01)', short: '5 mi', detail: '~15 min off-peak · 30–45 min PM rush' }
   ].forEach(ring => {
-    L.circle([OUR_PROPERTY.lat, OUR_PROPERTY.lng], {
+    const circle = L.circle([OUR_PROPERTY.lat, OUR_PROPERTY.lng], {
       radius: ring.mi * 1609.34,
       color: ring.color,
       fillColor: ring.fill,
       fillOpacity: 1,
-      weight: 1.5,
-      dashArray: '6,4'
-    }).addTo(map).bindTooltip(ring.label, { permanent: false, direction: 'top' });
+      weight: 2,
+      dashArray: '8,6'
+    }).addTo(map);
+    // Place a permanent label on the east edge of each ring
+    const earthRadius = 6371000;
+    const latRad = OUR_PROPERTY.lat * Math.PI / 180;
+    const lngOffset = (ring.mi * 1609.34) / (earthRadius * Math.cos(latRad)) * (180 / Math.PI);
+    const labelIcon = L.divIcon({
+      html: `<div style="
+        background:rgba(255,255,255,0.92); border:1px solid ${ring.color}; border-radius:4px;
+        padding:2px 7px; font-size:11px; font-weight:700; color:${ring.color};
+        white-space:nowrap; box-shadow:0 1px 3px rgba(0,0,0,0.15);
+        transform:translateY(-50%);">${ring.short}</div>`,
+      className: '', iconSize: [0, 0], iconAnchor: [0, 0]
+    });
+    L.marker([OUR_PROPERTY.lat, OUR_PROPERTY.lng + lngOffset], { icon: labelIcon, interactive: false }).addTo(map);
+    // Hover on the circle itself shows the detail
+    circle.bindTooltip(ring.detail, { sticky: true, direction: 'top' });
   });
 
   // Our property marker

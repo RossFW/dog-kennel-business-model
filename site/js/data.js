@@ -105,17 +105,17 @@ const COMPETITORS = [
     distanceMi: 4.5,
     driveTime: { offPeak: "14–18 min", amRush: "25–35 min", pmRush: "30–45 min", note: "South on Peachtree Rd through Brookhaven — gridlock at 5–7pm" },
     pricing: {
-      daycare: "$99/mo unlimited (intro offer)",
-      boarding: "Large kennels (not crates); 28-hr rate",
-      notes: "First day free. 360+ reviews."
+      daycare: "$37/day full · $25/half-day · 10-pack $32.50/day · 20-pack $30.50/day",
+      boarding: "$50/night standard · $60/night luxury (webcam) · $70/night presidential",
+      notes: "$99 unlimited first 30 days (intro). Add-ons: Special Treat $5, Enrichment $10–20, Private Care +$15/day. Climate-controlled private rooms; Luxury & Presidential include webcam."
     },
-    services: ["Daycare", "Boarding", "Grooming", "Specialty Food"],
+    services: ["Daycare", "Boarding", "Grooming", "Retail"],
     hours: "Standard daycare hours",
     rating: null,
     reviews: 360,
     reviewSource: "Birdeye",
     reviewUrl: "https://birdeye.com/bark-and-board-brookhaven-153936656938623",
-    notes: "Locally owned, 2 Atlanta locations. Known for large kennels, not crates. PM rush drive = 30–45 min.",
+    notes: "Full pricing confirmed from website (March 2026). 2 Atlanta locations. Walk-up $37/day, volume down to $30.50. Boarding $50–70 with upsell add-ons. PM rush = 30–45 min.",
     color: "#c0392b"
   },
   {
@@ -313,15 +313,15 @@ const COMPETITORS = [
     distanceMi: 6.5,
     driveTime: { offPeak: "20–25 min", amRush: "28–38 min", pmRush: "32–42 min", note: "East via I-285 or surface streets — serves Tucker/Stone Mountain catchment" },
     pricing: {
-      daycare: "Not listed",
+      daycare: "$26/day full · $20/half-day (6 hrs) · +$20 sibling · $10/dog weekends 9am–5pm",
       boarding: "$45/night (1st dog) · $35/night (sibling sharing kennel)",
-      notes: "Discounts for 8–14 night stays ($3 off/night) and 15+ nights ($5 off/night). Baths from $20. $15 late fee after 6pm."
+      notes: "Boarding includes full day daycare if dogs meet group play requirements. Volume daycare discounts available (call). Long-stay boarding: $3 off/night (8–14 nights), $5 off/night (15+). Baths from $20. $15 late fee after 6pm. Rates effective March 2025."
     },
     services: ["Daycare", "Boarding"],
     hours: "M–F 7am–7pm | Sat 9am–6pm | Sun 9am–6pm",
     rating: null,
     reviews: null,
-    notes: "Multi-location chain (Tucker + Norcross + Toco Hills). One of the few competitors with FULL Sunday hours (9am–6pm). East-side catchment (Tucker). 6.5 mi east of property.",
+    notes: "Full pricing confirmed from website (March 2026). CHEAPEST daycare in market at $26/day — $6 less than Atlanta Pet Resort ($32). Multi-location (Tucker + Norcross + Toco Hills). Full Sunday hours (9am–6pm). 6.5 mi east.",
     color: "#c0392b"
   }
 ];
