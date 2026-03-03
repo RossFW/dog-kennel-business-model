@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Build sources panels for each tab
   buildSourcesPanel(['property', 'dekalb_tax', 'dekalb_tax_calc', 'chamblee_tax', 'chamblee_zoning'], 'sources-property');
   buildSourcesPanel(['market_gminsights', 'market_grandview', 'appa_stats', 'chamblee_demographics', 'chamblee_zip', 'chamblee_datausa', 'rover_pricing', 'pet_industry_ga'], 'sources-market');
-  buildSourcesPanel(['dogtopia_pricing', 'bark_board_rates', 'bhv_main', 'dogphoria_yelp', 'rover_pricing', 'camp_run_mutt', 'atlanta_pet_resort', 'puppy_haven_brookhaven'], 'sources-competitors');
+  buildSourcesPanel(['dogtopia_pricing', 'bark_board_rates', 'bhv_main', 'dogphoria_yelp', 'rover_pricing', 'camp_run_mutt', 'atlanta_pet_resort', 'puppy_haven_brookhaven', 'shaggy_scrub', 'camp_woof_tucker'], 'sources-competitors');
   buildSourcesPanel(['startup_costs', 'property', 'dekalb_tax'], 'sources-financials');
   buildSourcesPanel(['staff_ratios', 'startup_costs'], 'sources-operations');
   buildSourcesPanel(['gda_kennel_license', 'gda_kennel_info', 'ga_statute', 'chamblee_zoning', 'chamblee_planning', 'dekalb_animal'], 'sources-regulations');

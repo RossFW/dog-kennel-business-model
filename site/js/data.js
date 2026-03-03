@@ -276,6 +276,53 @@ const COMPETITORS = [
     reviews: null,
     notes: "Positioning around 'enrichment daycare' — structured activities vs. free play. Rush drive = 50–65 min.",
     color: "#f39c12"
+  },
+  {
+    id: "shaggy-and-scrub",
+    name: "Shaggy and Scrub LLC",
+    type: "daycare-boarding",
+    tier: "micro-operator",
+    lat: 33.9042,
+    lng: -84.2792,
+    address: "2300 Global Forum Blvd, Doraville GA",
+    url: "https://shaggyandscrubllc.com/",
+    reviewUrl: "https://www.yelp.com/biz/shaggy-and-scrub-doraville",
+    distanceMi: 1.8,
+    driveTime: { offPeak: "7–9 min", amRush: "10–14 min", pmRush: "12–16 min", note: "Via Peachtree Blvd north to Doraville — short surface street run" },
+    pricing: {
+      daycare: "Not listed (call for rates)",
+      boarding: "Not listed (call for rates)",
+      notes: "Individual operator. Accepts Venmo/Apple Pay/Cash. Meet & greet required. $10 late fee."
+    },
+    services: ["Daycare", "Boarding", "Dog Walking", "Grooming"],
+    hours: "7 days/week",
+    rating: null,
+    reviews: null,
+    notes: "Individual operator (est. 2022). Small-scale, home/suite-based — NOT facility-level competition, but serves same catchment and is open 7 days. Closest competitor with Sunday availability.",
+    color: "#95a5a6"
+  },
+  {
+    id: "camp-woof-tucker",
+    name: "Camp Woof Tucker",
+    type: "daycare-boarding",
+    tier: "local-chain",
+    lat: 33.8488,
+    lng: -84.1872,
+    address: "4143 Hugh Howell Rd, Tucker GA 30084",
+    url: "https://www.campwoof.com/camp-woof-tucker",
+    distanceMi: 6.5,
+    driveTime: { offPeak: "20–25 min", amRush: "28–38 min", pmRush: "32–42 min", note: "East via I-285 or surface streets — serves Tucker/Stone Mountain catchment" },
+    pricing: {
+      daycare: "Not listed",
+      boarding: "$45/night (1st dog) · $35/night (sibling sharing kennel)",
+      notes: "Discounts for 8–14 night stays ($3 off/night) and 15+ nights ($5 off/night). Baths from $20. $15 late fee after 6pm."
+    },
+    services: ["Daycare", "Boarding"],
+    hours: "M–F 7am–7pm | Sat 9am–6pm | Sun 9am–6pm",
+    rating: null,
+    reviews: null,
+    notes: "Multi-location chain (Tucker + Norcross + Toco Hills). One of the few competitors with FULL Sunday hours (9am–6pm). East-side catchment (Tucker). 6.5 mi east of property.",
+    color: "#16a085"
   }
 ];
 
@@ -397,6 +444,16 @@ const SOURCES = {
     label: "DeKalb County Animal Services",
     url: "https://www.dekalbcountyga.gov/animal-services/home",
     notes: "County animal control, shelter, ordinance enforcement"
+  },
+  shaggy_scrub: {
+    label: "Shaggy and Scrub LLC — Yelp",
+    url: "https://www.yelp.com/biz/shaggy-and-scrub-doraville",
+    notes: "Individual operator, 2300 Global Forum Blvd Doraville, open 7 days, daycare/boarding/grooming/walking"
+  },
+  camp_woof_tucker: {
+    label: "Camp Woof Tucker — Pricing & Info",
+    url: "https://www.campwoof.com/camp-woof-tucker",
+    notes: "4143 Hugh Howell Rd Tucker GA, $45/night boarding, open Sunday 9am-6pm, 3 Atlanta locations"
   },
   dogtopia_pricing: {
     label: "Dogtopia North Brookhaven — Pricing",
