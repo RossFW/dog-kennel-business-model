@@ -130,9 +130,9 @@ const COMPETITORS = [
     distanceMi: 3.8,
     driveTime: { offPeak: "12–16 min", amRush: "22–30 min", pmRush: "28–40 min", note: "South on Peachtree then west — moderate surface-street congestion" },
     pricing: {
-      daycare: "Call for rates (evaluation $29.95, 1st night free after eval)",
-      boarding: "Not publicly listed",
-      notes: "Reward points program; $5 holiday surcharge. First daycare/boarding day FREE."
+      daycare: "$44.95/day (group) · $49.95/day (private 1-on-1)",
+      boarding: "$49.95/night base · add Bronze $24.95 (7am–1pm play) · Silver $29.95 (all-day play) · Gold $39.95 (all-day + treat) — max $89.90/night all-in",
+      notes: "Tiered upsell model: overnight base + optional day package. Evaluation: $29.95 (first boarding night free). Rewards points program."
     },
     services: ["Daycare", "Boarding", "Grooming", "Training"],
     hours: "M–Th 7am–7:30pm | F 7am–7pm | Sat 8am–4pm | Sun 12pm–7pm",
@@ -140,7 +140,7 @@ const COMPETITORS = [
     reviews: 125,
     reviewSource: "Yelp",
     reviewUrl: "https://www.yelp.com/biz/puppy-haven-brookhaven-brookhaven",
-    notes: "Previously missed competitor. Multi-location (also Buckhead). Indoor/outdoor play yards, grooming, training. 125+ Yelp reviews. PM rush drive = 28–40 min.",
+    notes: "Pricing confirmed via phone call (March 2026). Group daycare $44.95/day = above-market rate. Smart upsell: sell the overnight cheap ($49.95), then upsell day activities. Multi-location (Buckhead + Chastain). 125+ Yelp reviews.",
     color: "#1abc9c"
   },
   {
