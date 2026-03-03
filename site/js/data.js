@@ -43,7 +43,7 @@ const COMPETITORS = [
     reviews: 20,
     reviewSource: "Yelp",
     notes: "Closest facility competitor — same Peachtree corridor, 1 mile. Limited Sunday hours (4–6pm only) = clear gap. Boarding pricing confirmed: $65–75/night.",
-    color: "#e74c3c"
+    color: "#c0392b"
   },
   {
     id: "vca",
@@ -66,7 +66,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "On same road, 0.5 mi. Medical boarding niche — not direct daycare competition. Potential referral partner.",
-    color: "#3498db"
+    color: "#2980b9"
   },
   {
     id: "dogtopia-brookhaven",
@@ -90,7 +90,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "National franchise (Dogtopia). Membership/enrollment model creates recurring revenue. Boarding dogs in open-play (no kennel runs). PM rush drive = 30–45 min from our property.",
-    color: "#9b59b6"
+    color: "#c0392b"
   },
   {
     id: "bark-board-brookhaven",
@@ -116,7 +116,7 @@ const COMPETITORS = [
     reviewSource: "Birdeye",
     reviewUrl: "https://birdeye.com/bark-and-board-brookhaven-153936656938623",
     notes: "Locally owned, 2 Atlanta locations. Known for large kennels, not crates. PM rush drive = 30–45 min.",
-    color: "#e67e22"
+    color: "#c0392b"
   },
   {
     id: "puppy-haven-brookhaven",
@@ -141,7 +141,7 @@ const COMPETITORS = [
     reviewSource: "Yelp",
     reviewUrl: "https://www.yelp.com/biz/puppy-haven-brookhaven-brookhaven",
     notes: "Pricing confirmed via phone call (March 2026). Group daycare $44.95/day = above-market rate. Smart upsell: sell the overnight cheap ($49.95), then upsell day activities. Multi-location (Buckhead + Chastain). 125+ Yelp reviews.",
-    color: "#1abc9c"
+    color: "#c0392b"
   },
   {
     id: "bhv-sandy-springs",
@@ -164,7 +164,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Part of BHV — 7 Atlanta locations. NO location in Chamblee/north DeKalb. PM rush drive = 45–60 min from our property.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "bhv-buckhead",
@@ -187,7 +187,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "BHV's premium Buckhead location. Indoor climate-controlled play yard. PM rush = 50–70 min from Chamblee.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "bhv-cheshire",
@@ -206,7 +206,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "BHV chain location. Effectively 60–80 min round trip during PM rush for Chamblee residents.",
-    color: "#27ae60"
+    color: "#c0392b"
   },
   {
     id: "camp-run-a-mutt",
@@ -229,7 +229,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "National franchise. 100% cage-free, Muttcam livestream. Pricing confirmed. No Sunday daycare = gap for our facility.",
-    color: "#8e44ad"
+    color: "#c0392b"
   },
   {
     id: "atlanta-pet-resort-dunwoody",
@@ -252,7 +252,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Value pricing ($32/day daycare). Limited Saturday hours (10am–2pm). Pricing confirmed.",
-    color: "#2980b9"
+    color: "#c0392b"
   },
   {
     id: "central-bark",
@@ -275,7 +275,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Positioning around 'enrichment daycare' — structured activities vs. free play. Rush drive = 50–65 min.",
-    color: "#f39c12"
+    color: "#c0392b"
   },
   {
     id: "shaggy-and-scrub",
@@ -322,7 +322,7 @@ const COMPETITORS = [
     rating: null,
     reviews: null,
     notes: "Multi-location chain (Tucker + Norcross + Toco Hills). One of the few competitors with FULL Sunday hours (9am–6pm). East-side catchment (Tucker). 6.5 mi east of property.",
-    color: "#16a085"
+    color: "#c0392b"
   }
 ];
 
